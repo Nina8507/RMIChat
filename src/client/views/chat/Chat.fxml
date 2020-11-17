@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="461.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.chat.ChatController">
+   <children>
+      <Pane prefHeight="461.0" prefWidth="63.0" style="-fx-background-color: black;">
+         <children>
+            <Button layoutX="4.0" layoutY="400.0" mnemonicParsing="false" onAction="#onLogoutButton" text="LogOut" />
+         </children></Pane>
+      <Pane layoutX="61.0" prefHeight="461.0" prefWidth="221.0" style="-fx-background-color: lightblue;">
+         <children>
+            <TableView fx:id="tableView" layoutX="1.0" prefHeight="461.0" prefWidth="221.0" style="-fx-background-color: lightblue;">
+              <columns>
+                <TableColumn fx:id="activeUsersColumn" prefWidth="219.33332443237305" text="Online Users" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="284.0" prefHeight="461.0" prefWidth="228.0">
+         <children>
+            <TextField fx:id="messageToSendTextFields" layoutY="420.0" prefHeight="40.0" prefWidth="165.0" />
+            <TextArea fx:id="chatTextArea" prefHeight="420.0" prefWidth="228.0" />
+            <Button layoutX="162.0" layoutY="420.0" mnemonicParsing="false" onAction="#onSendButton" prefHeight="40.0" prefWidth="63.0" text="Send" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
